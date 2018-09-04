@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>WPI Green Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Raleway|Montserrat" rel="stylesheet">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js" charset="utf-8"></script>
+  <script defer="" src="https://code.jquery.com/jquery-3.1.1.min.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel='shortcut icon' href='favicon.ico' type='image/x-icon' />
+</head>
+
+<body>
+  <div id="drawer">
+    <a id="close" title="Close">X&nbsp;&nbsp;&nbsp;&nbsp;Close</a>
+    <a class="current" href="#">Welcome</a>
+    <a href="Events/events.html">Events</a>
+    <a href="Gallery/gallery.html">Gallery</a>
+    <a href="Guide/guide.html">Green Guide</a>
+    <a href="Contact/contact.html">Contact us</a>
+  </div>
+  <nav class="navbar navbar-fancy hidden-xs">
+    <a class="navbar-current" href="#">Welcome</a>
+    <a href="Events/events.html">Events</a>
+    <div class="dropdown">
+      <a href="Gallery/gallery.html?all">Gallery</a>
+      <div class="dropdown-content">
+        <a href="Gallery/gallery.html?2016-2017">2016 - 2017</a>
+        <a href="Gallery/gallery.html?2015-2016">2015 - 2016</a>
+        <a href="Gallery/gallery.html?2014-2015">2014 - 2015</a>
+      </div>
+    </div>
+    <a href="Guide/guide.html">Green Guide</a>
+    <a href="Contact/contact.html">Contact us</a>
+  </nav>
+  <div class="navbar visible-xs">
+    <a href="#">
+    <i class="material-icons" id="menu-btn">menu</i>
+  </a>
+  </div>
+  <div id="main-header" class="container-fluid">
+    <img src="logo-white.png" alt="Green Team Logo" id="logo" />
+  </div>
+  <div id="title-section" class="container-fluid">
+    <h1 id="title" class="text-center">WPI Green Team</h1>
+    <h4 id="subtitle" class="text-center">Act Responsibly, Think Sustainably!</h4>
+  </div>
+  <div id="main-content" class="container">
+    <div class="content-section">
+      <div id="about" class="section">
+        <h2 class="text-center uppercase">ABOUT us</h2>
+        <p class="text-center">
+          <strong>Meetings during A-term will be at 5PM in SL 105 on Mondays</strong>
+        </p>
+        <p class="text-justify">
+          The WPI Green Team is a student run organization dedicated to making WPI a more sustainable place and educating the WPI community about sustainability. The Green Team has several major annual events, including: The Waste Audit, where we sort through campus
+          waste to analyze WPI’s waste and recycling practices; The Electric Vehicle Show, where we bring efficient vehicles to campus and sponsor test drives; The E-Waste Drive, where we help community members safely dispose of large electronic waste;
+          and Recyclemania, where we take part in a national competition dedicated to raising recycling rates and awareness on campus. The Green Team also oversees the Gompei’s Gears Bike Share, which promotes bicycling as a healthy and sustainable commuting
+          and recreation option. The Green Team holds many minor events throughout the year, generally dedicated to raising sustainability awareness among students.
+        </p>
+      </div>
+      <div id="goals" class="section">
+        <h2 class="text-center uppercase">Our goals</h2>
+        <ul>
+          <li><strong>Promote a sustainable environment at WPI and in the Worcester community.</strong></li>
+          <li>Work with students and administration on topics of sustainability and environmental protection</li>
+          <li>Engage with the WPI community to educate about sustainable actions</li>
+          <li>Encourage students to take an active role in sustainability at WPI</li>
+          <li>Maintain Gompei’s Gears bikeshare</li>
+        </ul>
+      </div>
+
+      <div id="officers" class="section">
+        <h2 class="text-center uppercase">Officers</h2>
+        <p>Contact us at: <a href="mailto:greenteamexecs@wpi.edu">greenteamexecs@wpi.edu</a></p>
+        <ul>
+          <li><strong>President:</strong> <span id="president"></span></li>
+          <li><strong>Vice President and Bike Share Oversight Chair:</strong> <span id="vice-president"></span></li>
+          <li><strong>Bike Share Maintenance Chair:</strong> <span id="bike-share"></span></li>
+          <li><strong>Treasurer:</strong> <span id="treasurer"></span></li>
+          <li><strong>Secretary:</strong> <span id="secretary"></span></li>
+          <li><strong>Public Relations Representative and Social Chair:</strong> <span id="social"></span></li>
+        </ul>
+      </div>
+
+      <div id="important-buttons" class="row">
+        <div class="col-md-6 text-center">
+          <a class="button button-ghost full-width" href="https://www.wpi.edu/offices/sustainability/gompeis-gears-bike-share" target="_blank">Bike Share</a>
+          <br>
+        </div>
+      <div class="col-md-6 text-center">
+        <a class="button button-ghost full-width" href="Constitution/constitution.html">Constitution</a>
+        <br>
+      </div>
+    </div>
+    <br>
+    <div class="embed-responsive embed-responsive-16by9">
+      <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/m1RgVruWqiE" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <br>
+
+  </div>
+
+  <footer>
+    <p>
+      <a href="https://www.facebook.com/WPI-Green-Team-239738819546584/?fref=ts" target="_blank" title="Facebook">
+            <svg style="width:48px;height:48px" viewBox="0 0 24 24">
+                <path fill="#008a00" d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+            </svg>
+          </a>
+    </p>
+    <p>
+      Copyright &copy; 2017 WPI Green Team. All rights reserved.
+    </p>
+    <p>Site Designed by <a href="https://kylecorry31.github.io">Kyle Corry</a></p>
+  </footer>
+</body>
+
+<script type="text/javascript" src="officers.js"></script>
+
+</html>

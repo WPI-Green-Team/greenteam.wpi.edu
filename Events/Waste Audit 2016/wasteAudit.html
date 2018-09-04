@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>WPI Green Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script defer src="https://code.jquery.com/jquery-3.1.1.min.js" charset="utf-8"></script>
+  <script defer src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="../../styles.css">
+  <link rel='shortcut icon' href='../../favicon.ico' type='image/x-icon' />
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+
+<body>
+  <div id="drawer">
+    <a id="close" title="Close">X&nbsp;&nbsp;&nbsp;&nbsp;Close</a>
+    <a href="../../index.html">Welcome</a>
+    <a href="../../Events/events.html">Events</a>
+    <a href="../../Members/members.html">Members</a>
+    <a href="../../Gallery/gallery.html">Gallery</a>
+    <a href="../../Guide/guide.html">Green Guide</a>
+    <a href="../../Contact/contact.html">Contact us</a>
+  </div>
+  <div class="navbar navbar-fancy hidden-xs">
+    <a href="../../index.html">Welcome</a>
+    <div class="dropdown">
+      <a href="../../Events/events.html?all">Events</a>
+      <div class="dropdown-content">
+        <a href="../../Events/events.html?current">Current</a>
+        <a href="../../Events/events.html?past">Past</a>
+        <a href="../../Events/events.html?annual">Annual</a>
+      </div>
+    </div>
+    <a href="../../Members/members.html">Members</a>
+    <div class="dropdown">
+      <a href="../../Gallery/gallery.html?all">Gallery</a>
+      <div class="dropdown-content">
+        <a href="../../Gallery/gallery.html?2016-2017">2016 - 2017</a>
+        <a href="../../Gallery/gallery.html?2015-2016">2015 - 2016</a>
+        <a href="../../Gallery/gallery.html?2014-2015">2014 - 2015</a>
+      </div>
+    </div>
+    <a href="../../Guide/guide.html">Green Guide</a>
+    <a href="../../Contact/contact.html">Contact us</a>
+  </div>
+  <div class="navbar visible-xs">
+    <i class="material-icons" id="menu-btn">menu</i>
+  </div>
+
+  <div id="main-header" class="container-fluid">
+    <img src="../../logo-white.png" alt="Green Team Logo" id="logo" />
+  </div>
+  <div id="title-section" class="container-fluid">
+    <h1 id="title" class="text-center">Waste Audit 2016 Results</h1>
+  </div>
+
+  <div id="main-content" class="container">
+    <div class="content-section container">
+      <div id="gordon" class="row card">
+        <div class="card-body">
+          <h2 class="card-title" style="text-align: center;">Gordon Library</h2>
+          <div class="col-md-6" id="gordon-trash" style="height: 500px;"></div>
+          <div class="col-md-6" id="gordon-recycling" style="height: 500px;"></div>
+          <p class="card-text">
+            Gordon Library had a true recycling rate of 12% and a hauler's weight recycling rate of 20%. The total potential recycling rate is 22%.<br><br> The trash consisted of 54.6% plain trash, 25.1% food waste, 8% plastic, 6.7% liquid, 3.8% paper,
+            1.1% interesting items, and 0.6% cardboard.<br><br> The recycling bins consisted of 26% plastic, 26% paper, 21.7% plain trash, 17.3% liquid, 5.7% cardboard, 2.2% food waste, and 1.1% interesting items.
+          </p>
+        </div>
+      </div>
+
+      <div id="cc" class="row card">
+        <div class="card-body">
+          <h2 class="card-title" style="text-align: center;">Campus Center</h2>
+          <div class="col-md-6" id="cc-trash" style="height: 500px;"></div>
+          <div class="col-md-6" id="cc-recycling" style="height: 500px;"></div>
+          <p class="card-text">
+            The Campus Center had a true recycling rate of 12% and a hauler's weight recycling rate of 16%. The total potential recycling rate is 22%.<br><br> The trash consisted of 61.3% plain trash, 23.1% food waste, 8.5% plastic, 3.9% liquid, 1.3%
+            paper, 1.3% cardboard, and 0.6% interesting items.<br><br> The recycilng bins consisted of 39.8% cardboard, 27.9% plastic, 16.2% plain trash, 9.7% liquid, 6.3% paper, 0% food waste, and 0% interesting items.
+          </p>
+        </div>
+      </div>
+
+      <div id="daniels" class="row card">
+        <div class="card-body">
+          <h2 class="card-title" style="text-align: center;">Daniels Hall</h2>
+          <div class="col-md-6" id="daniels-trash" style="height: 500px;"></div>
+          <div class="col-md-6" id="daniels-recycling" style="height: 500px;"></div>
+          <p class="card-text">
+            Daniels Hall had a true recycling rate of 20% and a hauler's weight recycling rate of 34%. The total potential recycling rate is 33%.<br><br> The trash consisted of 61.8% plain trash, 8.4% food waste, 7.8% liquid, 7.3% cardboard, 5.8% interesting
+            items, 4.6% plastic, and 4.3% paper.<br><br> The recycling bins consisted of 29.3% plastic, 24.3% plain trash, 17.4% paper, 11.8% cardboard, 10.3% food waste, 4.4% interesting items, and 2.5% liquid.
+          </p>
+        </div>
+      </div>
+
+
+    </div>
+
+  </div>
+
+  <footer>
+    <p>
+      <a href="https://www.facebook.com/WPI-Green-Team-239738819546584/?fref=ts" target="_blank" title="Facebook">
+              <svg style="width:48px;height:48px" viewBox="0 0 24 24">
+                  <path fill="#008a00" d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+              </svg>
+            </a>
+    </p>
+    <p>
+      Copyright &copy; 2017 WPI Green Team. All rights reserved.
+    </p>
+    <p>Site Designed by <a href="https://kylecorry31.github.io">Kyle Corry</a></p>
+  </footer>
+
+  <script src="../../app.js" defer charset="utf-8"></script>
+  <script src="wasteAudit.js" charset="utf-8"></script>
+</body>
+
+</html>

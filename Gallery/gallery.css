@@ -1,0 +1,27 @@
+.gallery-img {
+    float: none;
+    display: inline-table;
+    vertical-align: top;
+    margin-bottom: 32px;
+}
+
+.gallery-img-container {
+    margin: auto;
+    padding: 10px;
+    /*border: 2px solid white;*/
+}
+
+.gallery-img-div {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: relative;
+    padding-top: 100%;
+}
+
+#gallery {
+    margin: auto;
+    display: table;
+    width: 100%;
+}

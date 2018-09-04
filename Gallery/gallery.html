@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <title>WPI Green Team</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../bootstrap.min.css">
+  <script defer src="https://code.jquery.com/jquery-3.1.1.min.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway" rel="stylesheet">
+  <link href="../Lightbox/lightbox.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel='shortcut icon' href='../favicon.ico' type='image/x-icon' />
+</head>
+
+<body>
+  <div id="drawer">
+    <a id="close" title="Close">X&nbsp;&nbsp;&nbsp;&nbsp;Close</a>
+    <a href="../index.html">Welcome</a>
+    <a href="../Events/events.html">Events</a>
+    <a class="current" href="#">Gallery</a>
+    <a href="../Guide/guide.html">Green Guide</a>
+    <a href="../Contact/contact.html">Contact us</a>
+  </div>
+
+  <div class="navbar navbar-fancy hidden-xs">
+    <a href="../index.html">Welcome</a>
+    <a href="../Events/events.html">Events</a>
+    <div class="dropdown">
+      <a class="navbar-current" href="?all">Gallery</a>
+      <div class="dropdown-content">
+        <a href="?2016-2017">2016 - 2017</a>
+        <a href="?2015-2016">2015 - 2016</a>
+        <a href="?2014-2015">2014 - 2015</a>
+      </div>
+    </div>
+    <a href="../Guide/guide.html">Green Guide</a>
+    <a href="../Contact/contact.html">Contact us</a>
+  </div>
+  <div class="navbar visible-xs">
+    <i class="material-icons" id="menu-btn">menu</i>
+  </div>
+
+  <div id="main-header" class="container-fluid">
+    <img src="../logo-white.png" alt="Green Team Logo" id="logo" />
+  </div>
+  <div id="title-section" class="container-fluid">
+    <h1 id="title" class="text-center">Gallery</h1>
+  </div>
+
+  <div id="main-content" class="container">
+    <div class="content-section" id="gallery">
+
+    </div>
+  </div>
+
+  <footer>
+    <p>
+      <a href="https://www.facebook.com/WPI-Green-Team-239738819546584/?fref=ts" target="_blank" title="Facebook">
+              <svg style="width:48px;height:48px" viewBox="0 0 24 24">
+                  <path fill="#008a00" d="M19,4V7H17A1,1 0 0,0 16,8V10H19V13H16V20H13V13H11V10H13V7.5C13,5.56 14.57,4 16.5,4M20,2H4A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4C22,2.89 21.1,2 20,2Z" />
+              </svg>
+            </a>
+    </p>
+    <p>
+      Copyright &copy; 2017 WPI Green Team. All rights reserved.
+    </p>
+    <p>Site Designed by <a href="https://kylecorry31.github.io">Kyle Corry</a></p>
+  </footer>
+
+  <script src="../app.js" charset="utf-8" defer></script>
+  <script src="../libs/Promise/promise.min.js" charset="utf-8"></script>
+  <script src="../libs/Fetch/fetch.js" charset="utf-8"></script>
+  <script src="gallery.js" charset="utf-8" defer></script>
+  <script src="../Lightbox/lightbox.min.js" charset="utf-8" defer></script>
+</body>
+
+</html>
