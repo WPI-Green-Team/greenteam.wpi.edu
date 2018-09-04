@@ -4,9 +4,7 @@
 
 function displayPhotos(photos) {
   var url = window.location.search.substr(1);
-  console.log(url);
   if (url === "" || url === "all") {
-    console.log(photos);
     Object.keys(photos).forEach(function(year){
       displayPhotosInYear(year, photos[year]);
     });
@@ -16,19 +14,9 @@ function displayPhotos(photos) {
 }
 
 function getPhotos(displayFn, errorFn, photoFile) {
-  var options = {
-    method: 'GET',
-    mode: 'cors',
-    cache: 'no-cache'
-  };
-
   if (photoFile === undefined) {
     photoFile = "data/photos.json";
   }
-
-
-  console.log("Loading photos");
-  var start = Date.now();
 
   var xhr = new XMLHttpRequest();
   xhr.onreadystatechange = function(){
