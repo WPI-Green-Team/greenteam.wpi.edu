@@ -1,0 +1,34 @@
+{
+	"events": [
+		{
+			"name": "Project Clean Plate",
+			"description": "We reward people who don't waste food with prizes or raffle tickets in Morgan POD.",
+			"term": "A"
+		}, {
+			"name": "Sustainability Pledge",
+			"description": "We have people sign a pledge to be more sustainable, hopefully encouraging them to take specific actions.",
+			"term": "A"
+		}, {
+			"name": "Waste Audit",
+			"description": "We sort through the trash of several buildings to determine the recycling rates and commonly disposed items.",
+			"term": "B"
+		}, {
+			"name": "Lighting Fair",
+			"description": "We work with a provider to sell LED lights on campus.",
+			"term": "B"
+		}, {
+			"name": "Recyclemania",
+			"description": "We compete against other colleges to see which one recycles better - involves fun games and events.",
+			"term": "C"
+		}, {
+			"name": "EarthFest",
+			"description": "We celebrate Earth Day with many environmental themed events, normally bringing out our bike blender.",
+			"term": "D"
+		}, {
+			"name": "E-Waste Drive",
+			"description": "We collect e-waste from the WPI community and send it off to a provider to properly have it recycled.",
+			"term": "D"
+		}
+
+	]
+}
