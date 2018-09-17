@@ -1,0 +1,27 @@
+{
+  "index": {
+    "title": "WPI Green Team",
+    "url": "index.html"
+  },
+  "links":[
+    {
+      "title": "Events",
+      "url": "events.html"
+    }, {
+      "title": "Gompei's Gears Bike Share",
+      "url": "https://www.wpi.edu/offices/sustainability/gompeis-gears-bike-share"
+    }, {
+      "title": "Gallery",
+      "url": "gallery.html"
+    }, {
+      "title": "Green Guide",
+      "url": "guide.html"
+    }, {
+      "title": "Constitution",
+      "url": "constitution.html"
+    },{
+      "title": "Contact",
+      "url": "contact.html"
+    }
+  ]
+}

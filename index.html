@@ -14,95 +14,61 @@
 </head>
 
 <body>
-  <div id="drawer">
-    <a id="close" title="Close">X&nbsp;&nbsp;&nbsp;&nbsp;Close</a>
-    <a class="current" href="#">Welcome</a>
-    <a href="events.html">Events</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="guide.html">Green Guide</a>
-    <a href="contact.html">Contact us</a>
-  </div>
-  <nav class="navbar navbar-fancy hidden-xs">
-    <a class="navbar-current" href="#">Welcome</a>
-    <a href="events.html">Events</a>
-    <div class="dropdown">
-      <a href="gallery.html?all">Gallery</a>
-      <div class="dropdown-content">
-        <a href="gallery.html?2016-2017">2016 - 2017</a>
-        <a href="gallery.html?2015-2016">2015 - 2016</a>
-        <a href="gallery.html?2014-2015">2014 - 2015</a>
-      </div>
-    </div>
-    <a href="guide.html">Green Guide</a>
-    <a href="contact.html">Contact us</a>
-  </nav>
-  <div class="navbar visible-xs">
-    <a href="#">
-    <i class="material-icons" id="menu-btn">menu</i>
-  </a>
-  </div>
   <div id="main-header" class="container-fluid">
-    <img src="img/logo-white.png" alt="Green Team Logo" id="logo" />
+    <!-- <img src="img/logo-white.png" alt="Green Team Logo" id="logo" /> -->
+    <h1>WPI Green Team</h1>
   </div>
-  <div id="title-section" class="container-fluid">
-    <h1 id="title" class="text-center">WPI Green Team</h1>
-    <h4 id="subtitle" class="text-center">Act Responsibly, Think Sustainably!</h4>
-  </div>
-  <div id="main-content" class="container">
-    <div class="content-section">
-      <div id="about" class="section">
-        <h2 class="text-center uppercase">ABOUT us</h2>
+      <div class="row page-header" id="page-header">
+      <value-proposition>
         <p class="text-center">
           <strong>Meetings during A-term will be at 5PM in SL 105 on Mondays</strong>
         </p>
-        <p class="text-justify">
+        <p>
           The WPI Green Team is a student run organization dedicated to making WPI a more sustainable place and educating the WPI community about sustainability. The Green Team has several major annual events, including: The Waste Audit, where we sort through campus
           waste to analyze WPI’s waste and recycling practices; The Electric Vehicle Show, where we bring efficient vehicles to campus and sponsor test drives; The E-Waste Drive, where we help community members safely dispose of large electronic waste;
           and Recyclemania, where we take part in a national competition dedicated to raising recycling rates and awareness on campus. The Green Team also oversees the Gompei’s Gears Bike Share, which promotes bicycling as a healthy and sustainable commuting
           and recreation option. The Green Team holds many minor events throughout the year, generally dedicated to raising sustainability awareness among students.
         </p>
-      </div>
-      <div id="goals" class="section">
-        <h2 class="text-center uppercase">Our goals</h2>
-        <ul>
-          <li><strong>Promote a sustainable environment at WPI and in the Worcester community.</strong></li>
-          <li>Work with students and administration on topics of sustainability and environmental protection</li>
-          <li>Engage with the WPI community to educate about sustainable actions</li>
-          <li>Encourage students to take an active role in sustainability at WPI</li>
-          <li>Maintain Gompei’s Gears bikeshare</li>
-        </ul>
-      </div>
 
-      <div id="officers" class="section">
-        <h2 class="text-center uppercase">Officers</h2>
-        <p>Contact us at: <a href="mailto:greenteamexecs@wpi.edu">greenteamexecs@wpi.edu</a></p>
-        <ul>
-          <li><strong>President:</strong> <span id="president"></span></li>
-          <li><strong>Vice President and Bike Share Oversight Chair:</strong> <span id="vice-president"></span></li>
-          <li><strong>Bike Share Maintenance Chair:</strong> <span id="bike-share"></span></li>
-          <li><strong>Treasurer:</strong> <span id="treasurer"></span></li>
-          <li><strong>Secretary:</strong> <span id="secretary"></span></li>
-          <li><strong>Public Relations Representative and Social Chair:</strong> <span id="social"></span></li>
-        </ul>
-      </div>
-
-      <div id="important-buttons" class="row">
-        <div class="col-md-6 text-center">
-          <a class="button button-ghost full-width" href="https://www.wpi.edu/offices/sustainability/gompeis-gears-bike-share" target="_blank">Bike Share</a>
-          <br>
+        <div id="goals">
+          <h2>Our Goals</h2>
+          <ul>
+            <li><strong>Promote a sustainable environment at WPI and in the Worcester community.</strong></li>
+            <li>Work with students and administration on topics of sustainability and environmental protection</li>
+            <li>Engage with the WPI community to educate about sustainable actions</li>
+            <li>Encourage students to take an active role in sustainability at WPI</li>
+            <li>Maintain Gompei’s Gears bikeshare</li>
+          </ul>
         </div>
-      <div class="col-md-6 text-center">
-        <a class="button button-ghost full-width" href="constitution.html">Constitution</a>
-        <br>
+
+        <div id="officers">
+          <h2>Officers</h2>
+          <p>Contact us at: <a href="mailto:greenteamexecs@wpi.edu">greenteamexecs@wpi.edu</a></p>
+          <ul>
+            <li><strong>President:</strong> {{ officers.president }}</li>
+            <li><strong>Vice President and Bike Share Oversight Chair:</strong> {{ officers["vice-president"] }}</li>
+            <li><strong>Bike Share Maintenance Chair:</strong> {{ officers["bike-share"] }}</li>
+            <li><strong>Treasurer:</strong> {{ officers.treasurer }} </li>
+            <li><strong>Secretary:</strong> {{ officers.secretary }} </li>
+            <li><strong>Public Relations Representative and Social Chair:</strong> {{ officers.social }}</li>
+          </ul>
+        </div>
+      </value-proposition>
+      <div class="col-md-4">
+        <navigation-menu sitemap="data/sitemap.json"></navigation-menu>
+        <div id="contact">
+          <p> <strong>CONTACT</strong> </p>
+          <p> <a href="mailto:greenteamexecs@wpi.edu">greenteamexecs@wpi.edu</a> </p>
+        </div>
       </div>
     </div>
-    <br>
-    <div class="embed-responsive embed-responsive-16by9">
-      <iframe class="embed-responsive-item" width="854" height="480" src="https://www.youtube.com/embed/m1RgVruWqiE" frameborder="0" allowfullscreen></iframe>
-    </div>
-    <br>
-
-  </div>
+  <div id="main-content">
+    <featured-links background="dark">
+      <h2>Gompei's Gears Bike Share</h2>
+      <p>The Green Team maintains the Gompei's Gears bike share program, which includes the administration of the program and the maintenance of the bikes. If you have an issue with Gompei's Gears, make sure to report it to <a href="mailto:bikeshare@wpi.edu">bikeshare@wpi.edu</a></p>
+      <featured-link href="#">Bike Share</featured-link>
+    </featured-links>
+    <media-pane-youtube url="https://www.youtube.com/embed/m1RgVruWqiE" background="light"></media-pane-youtube>
 
   <footer>
     <p>
@@ -118,7 +84,9 @@
     <p>Site Designed by <a href="https://kylecorry31.github.io">Kyle Corry</a></p>
   </footer>
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/vue"></script>
 <script type="text/javascript" src="js/officers.js"></script>
+<script type="text/javascript" src="js/components.js"></script>
+<script src="js/script.js" charset="utf-8"></script>
 
 </html>

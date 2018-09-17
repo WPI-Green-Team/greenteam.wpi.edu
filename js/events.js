@@ -59,7 +59,7 @@ function eventToHTML(ev) {
   var image = ev.imageUrl ? '<div style="background-image: url(\'' + ev.imageUrl + '\');" class="card-image"></div>' : '';
 
 
-  return '<div class="card event-restrict-width">' + image +
+  return '<div class="card event-restrict-width mdc-elevation--z2">' + image +
     '<div class="card-body"><h4 class="card-title">' + ev.name + '</h4>' +
     '<p class="card-text">' + ev.description + '</p>';
 }
