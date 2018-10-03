@@ -1,7 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
 html, body {
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
+  font-size: 17px;
+}
+
+html {
+  background: url("../img/background_blur.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+body {
+  max-width: 1700px;
+  margin-left: auto;
+  margin-right: auto;
+  background: white;
 }
 
 
@@ -22,11 +37,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: calc(0.8vw + 1.5rem);
   line-height: 1.4em;
-  letter-spacing: 0.15em;
-  color: #008a00;
-  font-weight: 400;
+  letter-spacing: -0.02em;
+  color: black;
   font-weight: bold;
 }
 
@@ -58,9 +72,17 @@ h6 {
   letter-spacing: 0.3em;
 }
 
+ul {
+  margin-top: 0;
+}
+
 p, li {
-  font-size: 16px;
-  line-height: 1.5em;
+  font-size: 1.1rem;
+  line-height: 1.6em;
+}
+
+p:first-child {
+  margin-top: 0;
 }
 
 a {
@@ -179,14 +201,14 @@ a:hover, a:focus {
 /*NAVBAR*/
 
 .navbar {
-  background-color: white;
+  background-color: #17292e;
   z-index: 5;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: row wrap;
-  max-width: 100em;
+  /* max-width: 100em; */
   padding: 0 3em;
   margin-left: auto;
   margin-right: auto;
@@ -194,13 +216,13 @@ a:hover, a:focus {
 }
 
 .navbar .navbar-current {
-  color: #008a00 !important;
+  color: white !important;
   font-weight: bold;
 }
 
 .navbar a {
   text-align: center;
-  color: #6a6a6a;
+  color: rgba(255, 255, 255, 0.8);
   text-transform: uppercase;
   line-height: 1.3125rem;
   flex-grow: 1;
@@ -221,14 +243,15 @@ a:hover, a:focus {
 }
 
 .navbar>a:hover, .dropdown:hover>a {
-  border-bottom: 5px solid #008a00;
+  background: #27393e;
+  color: white;
 }
 
 .dropdown-content {
   box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
   display: none;
   position: absolute;
-  background-color: white;
+  background-color: #17292e;
   width: 100%;
   z-index: 10;
 }
@@ -243,13 +266,12 @@ a:hover, a:focus {
 
 .dropdown-content a {
   display: block;
-  border-bottom: 2px solid #eaeaea;
 }
 
 .dropdown-content a:hover {
-  border-bottom: 2px solid #eaeaea;
-  background-color: #eaeaea;
+  background: #27393e;
 }
+
 
 .event-types {
   text-transform: uppercase;
@@ -357,28 +379,19 @@ a:hover, a:focus {
 
 @media screen and (min-width: 0px) {
   #main-header {
-    min-height: 150px;
-  }
-  #logo {
-    height: 125px;
+    min-height: 250px;
   }
 }
 
 @media screen and (min-width: 750px) {
   #main-header {
-    min-height: 250px;
-  }
-  #logo {
-    height: 225px;
+    min-height: 350px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   #main-header {
-    min-height: 350px;
-  }
-  #logo {
-    height: 250px;
+    min-height: 500px;
   }
 }
 
@@ -402,10 +415,40 @@ a:hover, a:focus {
 
 #main-content {
   /* min-height: 100vh; */
+  background: white;
+}
+
+section {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .section {
   margin-bottom: 32px;
+
+}
+
+.dark {
+  background: #17292e;
+  color: white;
+}
+
+.blue {
+  background: #dae6f2;
+  color: black;
+}
+
+#highlights {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 90%;
+}
+
+#highlights img {
+  max-width: 30%;
 }
 
 

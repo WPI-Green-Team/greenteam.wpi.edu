@@ -14,15 +14,9 @@
 </head>
 
 <body>
-  <div id="drawer">
-    <a id="close" title="Close">X&nbsp;&nbsp;&nbsp;&nbsp;Close</a>
-    <a class="current" href="#">Welcome</a>
-    <a href="events.html">Events</a>
-    <a href="gallery.html">Gallery</a>
-    <a href="guide.html">Green Guide</a>
-    <a href="contact.html">Contact us</a>
-  </div>
-  <nav class="navbar navbar-fancy hidden-xs">
+  <div id="main-header" class="container-fluid"></div>
+
+  <nav class="navbar">
     <a class="navbar-current" href="#">Welcome</a>
     <a href="events.html">Events</a>
     <div class="dropdown">
@@ -36,34 +30,31 @@
     <a href="guide.html">Green Guide</a>
     <a href="contact.html">Contact us</a>
   </nav>
-  <div class="navbar visible-xs">
-    <a href="#">
-    <i class="material-icons" id="menu-btn">menu</i>
-  </a>
-  </div>
-  <div id="main-header" class="container-fluid">
-    <img src="img/logo-white.png" alt="Green Team Logo" id="logo" />
-  </div>
-  <div id="title-section" class="container-fluid">
-    <h1 id="title" class="text-center">WPI Green Team</h1>
-    <h4 id="subtitle" class="text-center">Act Responsibly, Think Sustainably!</h4>
-  </div>
-  <div id="main-content" class="container">
-    <div class="content-section">
-      <div id="about" class="section">
-        <h2 class="text-center uppercase">ABOUT us</h2>
-        <p class="text-center">
-          <strong>Meetings during A-term will be at 5PM in SL 105 on Mondays</strong>
-        </p>
-        <p class="text-justify">
-          The WPI Green Team is a student run organization dedicated to making WPI a more sustainable place and educating the WPI community about sustainability. The Green Team has several major annual events, including: The Waste Audit, where we sort through campus
-          waste to analyze WPI’s waste and recycling practices; The Electric Vehicle Show, where we bring efficient vehicles to campus and sponsor test drives; The E-Waste Drive, where we help community members safely dispose of large electronic waste;
-          and Recyclemania, where we take part in a national competition dedicated to raising recycling rates and awareness on campus. The Green Team also oversees the Gompei’s Gears Bike Share, which promotes bicycling as a healthy and sustainable commuting
-          and recreation option. The Green Team holds many minor events throughout the year, generally dedicated to raising sustainability awareness among students.
-        </p>
+
+
+  <div id="content">
+
+  <section>
+    <div class="container" id="about">
+      <h1 class="text-center">WPI Green Team</h1>
+      <p class="text-center">
+        <strong>Meetings during A-term will be at 5PM in SL 105 on Mondays</strong>
+      </p>
+      <p class="text-justify">
+        The WPI Green Team is a student run organization dedicated to making WPI a more sustainable place and educating the WPI community about sustainability. The Green Team has several major annual events, including: The Waste Audit, where we sort through campus
+        waste to analyze WPI’s waste and recycling practices; The Electric Vehicle Show, where we bring efficient vehicles to campus and sponsor test drives; The E-Waste Drive, where we help community members safely dispose of large electronic waste;
+        and Recyclemania, where we take part in a national competition dedicated to raising recycling rates and awareness on campus. The Green Team also oversees the Gompei’s Gears Bike Share, which promotes bicycling as a healthy and sustainable commuting
+        and recreation option. The Green Team holds many minor events throughout the year, generally dedicated to raising sustainability awareness among students.
+      </p>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="container" id="goals">
+      <div class="col-md-2">
+        <h2>Our Goals</h2>
       </div>
-      <div id="goals" class="section">
-        <h2 class="text-center uppercase">Our goals</h2>
+      <div class="col-md-10">
         <ul>
           <li><strong>Promote a sustainable environment at WPI and in the Worcester community.</strong></li>
           <li>Work with students and administration on topics of sustainability and environmental protection</li>
@@ -72,9 +63,15 @@
           <li>Maintain Gompei’s Gears bikeshare</li>
         </ul>
       </div>
+    </div>
+  </section>
 
-      <div id="officers" class="section">
-        <h2 class="text-center uppercase">Officers</h2>
+  <section class="dark">
+    <div class="container" id="officers">
+      <div class="col-md-2">
+        <h2>Officers</h2>
+      </div>
+      <div class="col-md-10">
         <p>Contact us at: <a href="mailto:greenteamexecs@wpi.edu">greenteamexecs@wpi.edu</a></p>
         <ul>
           <li><strong>President:</strong> <span id="president"></span></li>
@@ -85,6 +82,24 @@
           <li><strong>Public Relations Representative and Social Chair:</strong> <span id="social"></span></li>
         </ul>
       </div>
+    </div>
+  </section>
+
+  <section class="blue">
+    <div class="container-fluid" id="highlights">
+      <img src="img/background_blur.jpg" alt="">
+      <img src="img/background.jpg" alt="">
+      <img src="img/background_blur.jpg" alt="">
+    </div>
+  </section>
+
+
+</div>
+
+
+
+  <div id="main-content" class="container">
+    <div class="content-section">
 
       <div id="important-buttons" class="row">
         <div class="col-md-6 text-center">
