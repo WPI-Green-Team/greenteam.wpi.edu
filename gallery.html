@@ -17,44 +17,31 @@
 </head>
 
 <body>
-  <div id="drawer">
-    <a id="close" title="Close">X&nbsp;&nbsp;&nbsp;&nbsp;Close</a>
-    <a href="index.html">Welcome</a>
-    <a href="events.html">Events</a>
-    <a class="current" href="#">Gallery</a>
-    <a href="guide.html">Green Guide</a>
-    <a href="contact.html">Contact us</a>
-  </div>
+  <div id="main-header" class="container-fluid"></div>
 
-  <div class="navbar navbar-fancy hidden-xs">
+  <nav class="navbar">
     <a href="index.html">Welcome</a>
     <a href="events.html">Events</a>
     <div class="dropdown">
-      <a class="navbar-current" href="?all">Gallery</a>
+      <a href="gallery.html?all" class="navbar-current">Gallery</a>
       <div class="dropdown-content">
-        <a href="?2016-2017">2016 - 2017</a>
-        <a href="?2015-2016">2015 - 2016</a>
-        <a href="?2014-2015">2014 - 2015</a>
+        <a href="gallery.html?2016-2017">2016 - 2017</a>
+        <a href="gallery.html?2015-2016">2015 - 2016</a>
+        <a href="gallery.html?2014-2015">2014 - 2015</a>
       </div>
     </div>
     <a href="guide.html">Green Guide</a>
-    <a href="contact.html">Contact us</a>
-  </div>
-  <div class="navbar visible-xs">
-    <i class="material-icons" id="menu-btn">menu</i>
-  </div>
+  </nav>
 
-  <div id="main-header" class="container-fluid">
-    <img src="img/logo-white.png" alt="Green Team Logo" id="logo" />
-  </div>
-  <div id="title-section" class="container-fluid">
-    <h1 id="title" class="text-center">Gallery</h1>
-  </div>
 
-  <div id="main-content" class="container">
-    <div class="content-section" id="gallery">
+  <div id="content">
 
+  <section>
+    <div class="container">
+      <div id="gallery"></div>
     </div>
+  </section>
+
   </div>
 
   <footer>

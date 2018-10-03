@@ -58,6 +58,7 @@ h2 {
   margin-top: 0;
   text-align: left;
   font-size: 22px;
+  letter-spacing: 0.05em;
 }
 
 h3 {
@@ -447,8 +448,12 @@ section {
   max-width: 90%;
 }
 
+#highlights > a {
+  width: 30%;
+}
+
 #highlights img {
-  max-width: 30%;
+  max-width: 100%;
 }
 
 
