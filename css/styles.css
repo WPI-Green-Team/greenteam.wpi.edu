@@ -509,8 +509,8 @@ section {
 
 .card-title {
   font: 500 24px 'Roboto', Helvetica, Arial, sans-serif;
-  color: rgba(0, 0, 0, 0.87);
-  text-align: center;
+  /* color: rgba(0, 0, 0, 0.87); */
+  /* text-align: center; */
 }
 
 .card-details {
@@ -524,8 +524,8 @@ section {
 
 .card-text {
   font: 400 15px/24px 'Roboto', Helvetica, Arial, sans-serif !important;
-  color: rgba(0, 0, 0, 0.87);
-  text-align: justify;
+  /* color: rgba(0, 0, 0, 0.87); */
+  /* text-align: justify; */
 }
 
 .card-actions a:hover {
@@ -568,24 +568,29 @@ section {
   text-decoration: none;
 }
 
-@media (min-width: 1000px) {
+/* @media (min-width: 1000px) {
   .event-restrict-width {
     max-width: 50%;
   }
-}
+} */
 
-.event-restrict-width {
+/* .event-restrict-width {
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .card {
   padding: 0;
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  /* box-shadow: 0 3px 1px -2px rgba(0, 0, 0, .2), 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12); */
   margin-bottom: 16px;
   border-radius: 2px;
-  background-color: #fafaf2;
-  color: rgb(51, 51, 51);
+  border: 1px solid black;
+  /* background-color: #fafaf2; */
+  /* color: rgb(51, 51, 51); */
+}
+
+.dark .card {
+  border-color: white;
 }
 
 .card-image {
