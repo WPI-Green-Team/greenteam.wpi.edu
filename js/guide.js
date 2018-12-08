@@ -11,13 +11,35 @@ var incandescentKWHLbl = document.getElementById('incandescent-kwh');
 var cflKWHLbl = document.getElementById('cfl-kwh');
 var ledKWHLbl = document.getElementById('led-kwh');
 
+var trashLbsField = document.getElementById('trash-lbs');
+var recyclingLbsField = document.getElementById('recycling-lbs');
+var recyclingRateLbl = document.getElementById('recycling-rate');
+
 (function() {
   showerTimeField.addEventListener('input', updateShowerTime);
   carMPGField.addEventListener('input', updateCarMPG);
   lightHoursField.addEventListener('input', updateIncandescentKWH);
   lightHoursField.addEventListener('input', updateCFLKWH);
   lightHoursField.addEventListener('input', updateLEDKWH);
+  trashLbsField.addEventListener('input', updateRecyclingRate);
+  recyclingLbsField.addEventListener('input', updateRecyclingRate);
+
 })();
+
+function updateRecyclingRate() {
+  var trash = trashLbsField.value;
+  var recycling = recyclingLbsField.value;
+
+  if (trash.trim() == "" || recycling.trim() == ""){
+    recyclingRateLbl.innerHTML = "";
+    return;
+  }
+
+  var recyclingRate = +recycling / (+trash + (+recycling)) * 100;
+
+  recyclingRateLbl.innerHTML = "= " + roundTwoPlaces(recyclingRate) + "% recycling rate";
+
+}
 
 function updateIncandescentKWH() {
   var hours = lightHoursField.value;
